@@ -42,10 +42,18 @@ if "messages" not in st.session_state:
 with st.sidebar:
     st.subheader("🔐 API Key Setup")
     openai_api_key = st.text_input(
-        "Enter your OpenAI API Key",
+        "Enter your OpenAI API Key (https://platform.openai.com/)",
         type="password",
         key="openai_api_key",
     )
+
+    if openai_api_key:
+        model_choice = st.selectbox(
+            "Choose GPT Model",
+            ["gpt-4-turbo", "gpt-3.5-turbo"],
+            index=0,  # Default to GPT-4 Turbo
+            key="selected_model"
+        )
 
 #  Stop execution if API key is missing (Prevents vector store error)
 if not openai_api_key:
@@ -70,7 +78,7 @@ if "messages" not in st.session_state:
     ]
 # --- Initialize LLM ---
 llm = ChatOpenAI(
-    model_name="gpt-3.5-turbo",
+    model_name= st.session_state["selected_model"],
     temperature=0,
     streaming=True,
     openai_api_key=openai_api_key
