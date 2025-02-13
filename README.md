@@ -5,6 +5,7 @@
 ## 🌍 Live Demo
 
 🚀 **Try the Puerto Rico Travel Chatbot here:**  
+
 [![Streamlit App](https://img.shields.io/badge/Launch%20App-Streamlit-red?style=for-the-badge)](https://puertorico-travel-chatbot.streamlit.app/)
 
 ## ✈️ Overview
