@@ -2,6 +2,11 @@
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/Sacarianos/Puerto_Rico_travel_planner_ai_chatbot)
 
+## 🌍 Live Demo
+
+🚀 **Try the Puerto Rico Travel Chatbot here:**  
+[![Streamlit App](https://img.shields.io/badge/Launch%20App-Streamlit-red?style=for-the-badge)](https://puertorico-travel-chatbot.streamlit.app/)
+
 ## ✈️ Overview
 **The Hitchhiker's Guide to Puerto Rico** is an AI-powered travel assistant that helps users plan trips to Puerto Rico. It uses OpenAI's GPT-4-turbo, Pinecone for vector search, and Streamlit for an interactive UI. The chatbot provides personalized itineraries, location recommendations, and travel insights based on user preferences.
 
