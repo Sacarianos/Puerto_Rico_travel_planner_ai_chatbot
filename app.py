@@ -70,7 +70,7 @@ if "messages" not in st.session_state:
     ]
 # --- Initialize LLM ---
 llm = ChatOpenAI(
-    model_name="gpt-4-turbo",
+    model_name="gpt-3.5-turbo",
     temperature=0,
     streaming=True,
     openai_api_key=openai_api_key
